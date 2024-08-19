@@ -20,11 +20,13 @@ export async function generateMetadata({
 export default async function Home() {
   return (
     <div className="w-full h-dvh flex items-center justify-center p-4">
-      have you seen this meme by{" "}
-      <a className="underline" href="https://warpcast.com/ds8">
-        ds8
-      </a>
-      ?
+      <span>
+        have you seen this meme by{" "}
+        <a className="underline" href="https://warpcast.com/ds8">
+          ds8
+        </a>
+        ?
+      </span>
     </div>
   );
 }
