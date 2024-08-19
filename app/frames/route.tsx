@@ -11,7 +11,7 @@ const handleRequest = frames(async (ctx) => {
     query: { imgurl },
   });
   const shareUrl = new URL("https://warpcast.com/~/compose");
-  shareUrl.searchParams.set("embeds", frameUrl);
+  shareUrl.searchParams.set("embeds[]", frameUrl);
   shareUrl.searchParams.set("text", "have you seen this meme?");
   return {
     image: ctx.createUrlWithBasePath({ pathname: "/image", query: { imgurl } }),
